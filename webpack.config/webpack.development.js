@@ -2,7 +2,7 @@ const path=require("path")
 const merge=require("webpack-merge");
 const webpackBaseConfig=require("./webpack.base.js");
 
-const webpackDevConfig=merge(webpackBaseConfig,{
+module.exports=merge(webpackBaseConfig,{
 	mode:"development",
 	devtool:"source-map",
     devServer:{
@@ -14,6 +14,3 @@ const webpackDevConfig=merge(webpackBaseConfig,{
         historyApiFallback:true,
     }
 })
-
-
-module.exports=webpackDevConfig

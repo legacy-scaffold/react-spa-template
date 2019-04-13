@@ -1,9 +1,9 @@
-const path=require("path")
+const path=require("path");
 const merge=require("webpack-merge");
 const webpackBaseConfig=require("./webpack.base.js");
 const cleanWebpackPlugin=require("clean-webpack-plugin");
 
-const webpackProdConfig=merge(webpackBaseConfig,{
+module.exports=merge(webpackBaseConfig,{
 	mode:"production",
 	plugins:[
 		new cleanWebpackPlugin(["*"],{
@@ -11,6 +11,3 @@ const webpackProdConfig=merge(webpackBaseConfig,{
 		})
 	]
 })
-
-
-module.exports=webpackProdConfig
