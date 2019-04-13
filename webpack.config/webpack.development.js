@@ -1,6 +1,6 @@
 const path=require("path")
 const merge=require("webpack-merge");
-const webpackBaseConfig=require("./webpack.base.js")
+const webpackBaseConfig=require("./webpack.base.js");
 
 const webpackDevConfig=merge(webpackBaseConfig,{
 	mode:"development",

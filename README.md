@@ -34,13 +34,11 @@ npm run test2
 
 > 其余项目文件
 
-| 目录                | 说明                               |
-| ------------------- | ---------------------------------- |
-| /production         | 打包后文件的存放目录               |
-| /StaticServer       | 集成的，用于测试的静态服务器文件夹 |
-| /StringConstantPool | 存放字符串常量池的文件夹           |
-| /webpack.config     | webpack配置文件的目录              |
-| /yscComponent       | 自己的组件库                       |
-| /yscPublicAPI       | 自己的工具库                       |
-| /EasyConfig.js      | 用于快速配置webpack的简易文件      |
+| 目录            | 说明                               |
+| --------------- | ---------------------------------- |
+| /production     | 打包后文件的存放目录               |
+| /resources      | 各种项目资源文件夹                 |
+| /StaticServer   | 集成的，用于测试的静态服务器文件夹 |
+| /webpack.config | webpack配置文件的目录              |
+| /EasyConfig.js  | 用于快速配置webpack的简易文件      |
 

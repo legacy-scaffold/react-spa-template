@@ -3,7 +3,10 @@ const EasyConfig=require("../../EasyConfig.js")
 
 module.exports={
 	alias:Object.assign({
-		PathPool:path.resolve(__dirname,"../../StringConstantPool/PathPool.js"),
-		publicImage:path.resolve(__dirname,"../../development/publicImage/")
+		lib:path.resolve(__dirname,"../../resources/myLibrary/"),
+		fonts:path.resolve(__dirname,"../../resources/fonts/"),
+		icons:path.resolve(__dirname,"../../resources/icons/"),
+		images:path.resolve(__dirname,"../../resources/images/"),
+		components:path.resolve(__dirname,"../../resources/myComponents/")
 	},EasyConfig.alias)
 }

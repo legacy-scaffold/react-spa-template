@@ -7,7 +7,7 @@ const webpackResolve=require("./webpack.resolve/webpack.resolve.js")
 
 module.exports={	
 	entry:webpackEntry([
-		path.resolve(__dirname,"../development/entry.js")
+		path.resolve(__dirname,"../development/application/entry.js")
 	]),
 	output:{
 		publicPath:"/",

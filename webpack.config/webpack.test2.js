@@ -5,11 +5,11 @@ const cleanWebpackPlugin=require("clean-webpack-plugin")
 
 module.exports=merge(webpackBaseConfig,{
 	output:{
-		path:path.resolve(__dirname,"../StaticServer/test2/")
+		path:path.resolve(__dirname,"../static-server/test2/")
 	},
 	plugins:[
 		new cleanWebpackPlugin(["*"],{
-			root:path.resolve(__dirname,"../StaticServer/test2/")
+			root:path.resolve(__dirname,"../static-server/test2/")
 		})
 	]
 })
