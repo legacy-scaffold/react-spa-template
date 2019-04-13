@@ -2,19 +2,12 @@ const path=require("path");
 const webpack=require("webpack");
 const HtmlWebpackPlugin=require("html-webpack-plugin");
 const MiniCssExtractPlugin=require("mini-css-extract-plugin");
-
+const MomentLocalesPlugin=require("moment-locales-webpack-plugin");
 
 module.exports=[
-	new webpack.ProvidePlugin({
-		"React":"react",
-		"ReactDOM":"react-dom",
-		"PropTypes":"prop-types",
-		"classnames":"classnames",
-		"PubSub":"pubsub-js",
-		"moment":"moment",
-	}),
+	new MomentLocalesPlugin(),
 	new webpack.DefinePlugin({
-		"env":JSON.stringify(process.env.NODE_ENV)
+		"process.env.NODE_ENV":JSON.stringify(process.env.NODE_ENV)
 	}),
     //根据css优先级进行排序    
     new MiniCssExtractPlugin({
@@ -24,7 +17,7 @@ module.exports=[
 	new HtmlWebpackPlugin({
 		cache:false,
 		filename:"index.html",
-		template:path.resolve(__dirname,"../../development/template.html")
+		template:path.resolve(__dirname,"../../development/Application/template.html")
 	}),
 	//定义全局变量
 	//雪碧图插件
