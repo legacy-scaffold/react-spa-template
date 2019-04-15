@@ -9,7 +9,7 @@ module.exports=merge(webpackBaseConfig,{
         open:true,
         port:"9090",
         inline:true,
-        host:"192.168.0.100",
+        host:"127.0.0.1",
         disableHostCheck:false,
         historyApiFallback:true,
     }
