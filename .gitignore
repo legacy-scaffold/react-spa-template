@@ -1,4 +1,5 @@
-/static-server/
+!/static-server/Test2Server.js
+!/static-server/parseArgument.js
 /production/
 /node_modules/
 /package-lock.json/
