@@ -34,7 +34,6 @@ module.exports={
                 outputPath:"images",
                 name:"[name]-[hash].[ext]" 
             }
-        }],
-        exclude:/(node_modules)/,
+        }]
     }]
 }
